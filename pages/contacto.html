@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link css -->
     <link rel="stylesheet" href="./../css/styles.css">
     <link rel="shortcut icon" href="./../assets/blacklogo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- link fuentes -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> -->
     <title>Sweet Florida</title>
 </head>
 <body>
     <header>
         <img src="./../assets/sweetflorida.webp" alt="Logo SweetFlorida">
-        <nav>
+        <input type="checkbox" id="btn_menu">
+        <label for="btn_menu"><img src="./../assets/hamburger-menu.svg" alt=""></label>
+        <nav class="menu">
             <ul>
                 <li>
                     <a href="./../index.html">Home</a>
                 </li>
                 <li>
                     <a href="./../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./../index.html">
+                        <img class="logo-hidden" src="./../assets/sweetflorida.webp" alt="logo">
+                    </a>
+                </li>
                     <li>
                         <a href="./../pages/galeria.html">Galería</a>
                     </li>
                     <li>
                         <a href="./../pages/catalogo.html">Catálogo</a>
                     </li>
-                </li>
                 <li>
                     <a href="./../pages/contacto.html">Contacto</a>
                 </li>

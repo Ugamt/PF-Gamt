@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 
-html{
+/* html{
     font-family: 'Roboto Condensed', sans-serif; 
     
-}
+} */
 
 /* Ejemplo */
 /* header */
@@ -19,21 +19,40 @@ header{
     align-items: center;
     padding: 10px;
 }
+
+header #btn_menu{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+header label:hover{
+    cursor: pointer;
+}
 header img{
-    width: 200px;
+    width: 100px;
 }
 
 header nav ul{
-    list-style: none;
     display: flex;
-    column-gap: 10px
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 0;
+}
 
+header nav ul li{
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* main */
 section{
     margin-top: 40px;
-
+    
 }
 
 section h1{
@@ -97,6 +116,66 @@ section h2{
 
 
 /* Media Queries */
+@media screen  and (max-width: 1024px){
+    .contenedor-flex{
+        flex-direction: row;
+        
+    }
+    
+    .card-text{
+        text-align: center;
+    }
+
+    /* header */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo{
+        display: block;
+        width: 100px;
+        margin-left: 25px;
+    }
+
+    .logo-hidden{
+        display: none;
+    }
+    
+    header label{
+        display: block;
+        position: relative;
+        right: 25px;
+    }
+
+    header label img{
+        width: 50px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 100px;
+        background-color: #e7deed;
+        visibility: hidden;
+        width: 100vw;
+        z-index: 1;
+    }
+    
+    .menu ul{
+        flex-direction: column;
+    }
+
+    #btn_menu:checked~.menu{
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
 @media screen and (max-width:768px){
     .contenedor-flex{
         flex-direction: column;
@@ -110,4 +189,50 @@ section h2{
     .card{
         width: 80vw;
     }
+
+    /* header */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo{
+        display: block;
+        width: 100px;
+        margin-left: 25px;
+    }
+
+    .logo-hidden{
+        display: none;
+    }
+    
+    header label{
+        display: block;
+        position: relative;
+        right: 25px;
+    }
+
+    header label img{
+        width: 50px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 100px;
+        background-color: #e7deed;
+        visibility: hidden;
+        width: 100vw;
+        z-index: 1;
+    }
+    
+    .menu ul{
+        flex-direction: column;
+    }
+
+    #btn_menu:checked~.menu{
+        visibility: visible;
+    }
 }
+
+

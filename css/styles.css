@@ -227,6 +227,15 @@ section h2 {
     width: 40px;
 }
 
+/* estilos galeria */
+.carousel-item img{
+    justify-content: center;
+    width: 20vw;
+    margin: 0;
+    height: 600px;
+}
+
+
 /* Media Queries */
 /* @media screen  and (max-width: 1024px){ */
 @media screen and (max-width: 768px) {

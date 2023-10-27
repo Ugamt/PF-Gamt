@@ -1,0 +1,15 @@
+/*Estilos formulario*/
+
+.formulario{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    gap: 1rem;
+    .consulta{
+        margin-top: 10px;
+        .boton{
+            gap: 10px;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+/*Estilos footer*/
+
+footer{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    div{
+        a{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}

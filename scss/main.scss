@@ -1,0 +1,27 @@
+/*Estilos css*/
+
+@import "utilities/reset";
+@import "utilities/mixin";
+@import "utilities/variables";
+
+
+
+@import "components/header";
+
+
+
+
+@import "pages/main-index";
+@import "pages/banner-nosotros";
+@import "pages/formulario";
+@import "pages/galeria";
+@import "pages/main-catalogo";
+
+
+@import "components/footer";
+
+
+
+@import "utilities/media-queries";
+
+

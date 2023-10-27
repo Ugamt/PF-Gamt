@@ -1,0 +1,134 @@
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+    .nosotros{
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 80vw;
+            .nosotros-text{
+                text-align: center;
+            }
+        }
+    }
+    .contenedor-flex{
+        flex-direction: column;
+        align-items: center;
+        .cards{
+            width: 80%;
+            .texto{
+                text-align: center;
+            }
+        }
+    }
+
+/*Header*/
+    header{
+        @include flex(row,center,space-between);
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        #btn_menu:checked~.menu{
+            visibility: visible;
+        }
+        .logo{
+            display: block;
+            width: 100px;
+            margin-left: 25px;
+        }
+        label{
+            display: block;
+            position: relative;
+            right: 25px;
+            img{
+                width: 50px;
+            }
+        }
+        .menu{
+            position: absolute;
+            top: 100px;
+            background-color: #e7deed;
+            visibility: hidden;
+            width: 100vw;
+            z-index: 1;
+            ul{
+                flex-direction: column;
+                li{
+                    a{
+                        .logo-hidden{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*Mapa*/
+    
+    section{
+        .mapa{
+            width: 100%;
+            align-items: center;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+    
+
+    /*Galeria*/
+    .contenedor{
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        .img-uno{
+            grid-column: span 2 ;
+        }
+        .img-dos{
+            grid-column: span 2;
+        }
+        .img-tres{
+            grid-column: span 2;
+        }
+        .img-cuatro{
+            grid-column: span 2;
+        }
+        .img-cinco{
+            grid-column: span 2;
+        }
+    }
+
+
+    .formulario{
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 30vh);
+        div{
+            height: auto;
+        }
+        .img-uno{
+            height: 100%;
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .texto-uno{
+            height: 100%;
+        }
+        .img-tres{
+            grid-column: span 1;
+        }
+        .img-cuatro{
+            grid-column: span 2;
+        }
+        .img-cinco{
+            grid-column: span 3;
+        }
+    }
+}
+

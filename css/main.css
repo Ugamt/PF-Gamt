@@ -59,15 +59,15 @@ section .contenedor-flex {
   margin-bottom: 60px;
 }
 section .contenedor-flex .cards {
-  width: 350px;
-  height: 400px;
+  width: 295px;
+  height: 380px;
 }
 section .contenedor-flex .cards img {
   width: 100%;
   height: 200px;
   background-color: rgba(57, 59, 67, 0.1568627451);
   box-shadow: 12px 7px 25px 1px rgba(0, 0, 0, 0.75);
-  border-radius: 20px 0px;
+  border-radius: 20px 5px;
   overflow: hidden;
 }
 section .contenedor-flex .cards .texto {
@@ -78,7 +78,7 @@ section .contenedor-flex .cards .texto {
   text-align: center;
   height: 180px;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .mapa {
@@ -144,6 +144,7 @@ section .contenedor-flex .cards .texto {
 .nosotros div img {
   width: 100%;
   height: 100%;
+  border-radius: 20px 20px;
 }
 
 .nosotros-text {
@@ -283,10 +284,8 @@ footer div a img {
     text-align: center;
   }
   .contenedor-flex {
+    flex-direction: column;
     align-items: center;
-  }
-  .contenedor-flex .cards {
-    width: 80vw;
   }
   .contenedor-flex .cards .texto {
     text-align: center;
